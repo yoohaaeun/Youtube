@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/iframe-has-title */
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 import ChannelInfo from '../components/ChannelInfo';
@@ -8,7 +9,6 @@ export default function VideoDetail() {
     state: { video },
   } = useLocation();
   const { title, channelId, channelTitle, description } = video.snippet;
-  console.log(video);
 
   return (
     <section>
@@ -19,7 +19,6 @@ export default function VideoDetail() {
           width='100%'
           height='640'
           src={`http://www.youtube.com/embed/${video.id}`}
-          frameborder='0'
         />
         <div>
           <h2>{title}</h2>
