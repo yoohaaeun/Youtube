@@ -22,7 +22,7 @@ export default function SearchHeader() {
         <input
           className='w-7/12 p-2 outline-none bg-black text-gray-50'
           type='text'
-          placeholder='Serch...'
+          placeholder='Search...'
           value={text}
           onChange={(e) => setText(e.target.value)}
         />

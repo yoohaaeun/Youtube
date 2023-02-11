@@ -9,7 +9,7 @@ export default class YoutubeClient {
   }
 
   async search(params) {
-    this.httpClient.get('search', params);
+    return this.httpClient.get('search', params);
   }
 
   async videos(params) {
